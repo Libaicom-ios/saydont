@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<body>
+
+		<head>
+			<div id="wxh">
+				<script type="text/javascript">
+					arr_wx = ['微信号1111', '微信号2222', '微信号3333'];
+					var wx_index = Math.floor((Math.random() * arr_wx.length));
+					var stxlwx = arr_wx[wx_index];
+					var img = arr_wx[wx_index] + ".jpg";
+					var wx_img = "<img width='200'  src='qrcode/" + img + "'>";
+				</script>
+			</div>
+		
+			<div id="wecaht" style="text-align:center;">
+				<span>
+					<a href="">微信号轮播</a>
+						<script>document.write(stxlwx);</script>
+				</span>
+				<br>-------------------------------------------</br>
+				<span>
+					<a href="">二维码轮播</a>
+						<script>document.write(wx_img);</script>
+				</span>
+			</div>
+		
+		</head>
+	
+	</body>
+
+</html>
